@@ -249,7 +249,7 @@
   function start(){
     c.cursor.off();
     c.clear();
-    c.scrub(1, 1, c.rows-2, c.cols);
+    c.scrub(1, 1, c.cols, c.rows);
     while (isEnabled) {
       eachLoop();
       internal.sleep(1 / 45);
